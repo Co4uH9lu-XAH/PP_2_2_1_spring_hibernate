@@ -31,6 +31,8 @@ public class MainApp {
          System.out.println("Email = " + user.getEmail());
          System.out.println();
       }
+      // В ТЗ требования на вывод нет, но на всякий случай
+      System.out.println(userService.getUser("Ford", 1));
       context.close();
    }
 }
