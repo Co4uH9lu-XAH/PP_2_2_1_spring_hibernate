@@ -2,7 +2,6 @@ package hiber.dao;
 
 import hiber.model.User;
 
-import javax.jws.soap.SOAPBinding;
 import java.util.List;
 
 public interface UserDao {
