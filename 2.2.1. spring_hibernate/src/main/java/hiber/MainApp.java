@@ -21,7 +21,7 @@ public class MainApp {
       userService.add(new User("DobPbIu", "Beatle", "beatle@mail.ru", new Car("RussoBalt", 3)));
       userService.add(new User("Co4UH9IU-XAH", "unknown", "unknown", new Car("Pogonyay-arba", 4)));
 
-      List<User> users = userService.listUsers();
+      List<User> users = userService.getlistUsers();
       for (User user : users) {
          System.out.println("Id = " + user.getId());
          System.out.println("User`s model of car = " + user.getCar().getModel());
