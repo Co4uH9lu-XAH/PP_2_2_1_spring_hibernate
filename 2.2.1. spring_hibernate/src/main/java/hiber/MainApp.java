@@ -16,12 +16,12 @@ public class MainApp {
 
       UserService userService = context.getBean(UserService.class);
 
-      userService.add(new User("Wooden", "Worm", "worm@mail.ru", new Car("Ford", 1)));
-      userService.add(new User("Sweaty", "Beast", "beast@mail.ru", new Car("ZAZ", 2)));
-      userService.add(new User("DobPbIu", "Beatle", "beatle@mail.ru", new Car("RussoBalt", 3)));
-      userService.add(new User("Co4UH9IU-XAH", "unknown", "unknown", new Car("Pogonyay-arba", 4)));
+      userService.addUser(new User("Wooden", "Worm", "worm@mail.ru", new Car("Ford", 1)));
+      userService.addUser(new User("Sweaty", "Beast", "beast@mail.ru", new Car("ZAZ", 2)));
+      userService.addUser(new User("DobPbIu", "Beatle", "beatle@mail.ru", new Car("RussoBalt", 3)));
+      userService.addUser(new User("Co4UH9IU-XAH", "unknown", "unknown", new Car("Pogonyay-arba", 4)));
 
-      List<User> users = userService.getlistUsers();
+      List<User> users = userService.getlist();
       for (User user : users) {
          System.out.println("Id = " + user.getId());
          System.out.println("User`s model of car = " + user.getCar().getModel());
